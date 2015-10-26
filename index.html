@@ -32,6 +32,14 @@
 		<!--[if lt IE 9]>
 		<script src="lib/js/html5shiv.js"></script>
 		<![endif]-->
+		<script src="bower_components/jquery/dist/jquery.min.js"></script>
+		<style>
+			em {
+				font-style: normal !important;
+				color: #99F;
+				font-weight: bold !important;
+			}
+		</style>
 	</head>
 
 	<body>
@@ -41,338 +49,393 @@
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
 				<section>
-					<h1>Reveal.js</h1>
-					<h3>The HTML Presentation Framework</h3>
+					<h1>Typescript</h1>
+					<h2>L'introduction gentille</h2>
 					<p>
-						<small>Created by <a href="http://hakim.se">Hakim El Hattab</a> / <a href="http://twitter.com/hakimel">@hakimel</a></small>
+						<small>Hacking Mondays <br><a href="https://twitter.com/paloaltours">@PALOALTOURS</a></small>
 					</p>
 				</section>
 
-				<section>
-					<h2>Hello There</h2>
-					<p>
-						reveal.js enables you to create beautiful interactive slide decks using HTML. This presentation will show you examples of what it can do.
-					</p>
-				</section>
-
-				<!-- Example of nested vertical slides -->
 				<section>
 					<section>
-						<h2>Vertical Slides</h2>
-						<p>Slides can be nested inside of each other.</p>
-						<p>Use the <em>Space</em> key to navigate through all slides.</p>
-						<br>
-						<a href="#" class="navigate-down">
-							<img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
-						</a>
+						<h2>Un survol</h2>
+					</section>
+
+					<section>
+						<h4>Ça ressemble à du javascript</h4>
+					<pre><code class="javascript" data-trim contenteditable style="font-size: 18px;" external-src="samples/js_ts_example_1.ts">
+					</code></pre>
+					</section>
+
+					<section>
+						<h4>Avec du typage</h4>
+					<pre><code class="javascript" data-trim contenteditable style="font-size: 18px;" external-src="samples/js_ts_example_2.ts">
+					</code></pre>
+					</section>
+
+					<section>
+						<h4>Et des classes</h4>
+					<pre><code class="javascript" data-trim contenteditable style="font-size: 18px;" external-src="samples/js_ts_example_3.ts">
+					</code></pre>
+					</section>
+
+					<section>
+						<h4>Et des trucs en plus</h4>
+					<pre><code class="javascript" data-trim contenteditable style="font-size: 18px;" external-src="samples/js_ts_example_4.ts">
+					</code></pre>
+					</section>
+
+					<section>
+						<h4>Jusqu'à ne plus beaucoup ressembler à du javascript</h4>
+					<pre><code class="javascript" data-trim contenteditable style="font-size: 18px; overflow: visible;" external-src="samples/js_ts_example_5.ts">
+					</code></pre>
+					</section>
+
+				</section>
+
+				<section>
+					<h2>Historique</h2>
+					<ul>
+						<li><em>Anders Hejlsberg</em><br> TurboPascal, Delphi, Microsoft J++, C#, Typescript</li>
+						<li><em>0.8</em> [oct. 2012] 1ère sortie publique</li>
+						<li><em>1.0</em> [avril 2014] acceptent les pull requests</li>
+						<li><em>Github</em> [juillet 2014] bye bye Codeplex</li>
+						<li><em>Roadmap</em> [oct 2014] enfin une roadmap !</li>
+						<li><em>Angular 2</em> [mars 2015] le mariage avec le top-model</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Design goals</h2>
+					<ul>
+						<li>Extension <em>stricte</em> du langage JS</li>
+						<li>Alignement sur  ES6/ES7</li>
+						<li>Transpilations cibles ES3, ES5, ES6</li>
+						<li>Émission de Javascript propre et lisible par un humain</li>
+					</ul>
+				</section>
+
+				<section>
+					<section>
+						<h2>Pros &amp; Cons</h2>
 					</section>
 					<section>
-						<h2>Basement Level 1</h2>
-						<p>Nested slides are useful for adding additional detail underneath a high level horizontal slide.</p>
+						<h3>Bénéfices</h3>
+						<ul>
+							<li><em>Typage fort</em> (vérifications du compilateur, completion, refactoring)</li>
+							<li><em>Fonctionnalités ES6</em> transpilées vers ES3/ES5</li>
+							<li>Open-source, évolution ouverte, roadmap, traction</li>
+							<li>Une spécification <em>à jour</em></li>
+						</ul>
 					</section>
 					<section>
-						<h2>Basement Level 2</h2>
-						<p>That's it, time to go back up.</p>
-						<br>
-						<a href="#/2">
-							<img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Up arrow" style="transform: rotate(180deg); -webkit-transform: rotate(180deg);">
-						</a>
+						<h2>Inconvénients</h2>
+						<ul>
+							<li>Étape de compilation supplémentaire</li>
+							<li>Support de ES6 parcellaire</li>
+							<li>Documentation pas à jour</li>
+						</ul>
 					</section>
 				</section>
 
 				<section>
-					<h2>Slides</h2>
-					<p>
-						Not a coder? Not a problem. There's a fully-featured visual editor for authoring these, try it out at <a href="http://slides.com" target="_blank">http://slides.com</a>.
-					</p>
-				</section>
 
-				<section>
-					<h2>Point of View</h2>
-					<p>
-						Press <strong>ESC</strong> to enter the slide overview.
-					</p>
-					<p>
-						Hold down alt and click on any element to zoom in on it using <a href="http://lab.hakim.se/zoom-js">zoom.js</a>. Alt + click anywhere to zoom back out.
-					</p>
-				</section>
-
-				<section>
-					<h2>Touch Optimized</h2>
-					<p>
-						Presentations look great on touch devices, like mobile phones and tablets. Simply swipe through your slides.
-					</p>
-				</section>
-
-				<section data-markdown>
-					<script type="text/template">
-						## Markdown support
-
-						Write content using inline or external Markdown.
-						Instructions and more info available in the [readme](https://github.com/hakimel/reveal.js#markdown).
-
-						```
-						<section data-markdown>
-						  ## Markdown support
-
-						  Write content using inline or external Markdown.
-						  Instructions and more info available in the [readme](https://github.com/hakimel/reveal.js#markdown).
-						</section>
-						```
-					</script>
-				</section>
-
-				<section>
-					<section id="fragments">
-						<h2>Fragments</h2>
-						<p>Hit the next arrow...</p>
-						<p class="fragment">... to step through ...</p>
-						<p><span class="fragment">... a</span> <span class="fragment">fragmented</span> <span class="fragment">slide.</span></p>
-
-						<aside class="notes">
-							This slide has fragments which are also stepped through in the notes window.
-						</aside>
-					</section>
 					<section>
-						<h2>Fragment Styles</h2>
-						<p>There's different types of fragments, like:</p>
-						<p class="fragment grow">grow</p>
-						<p class="fragment shrink">shrink</p>
-						<p class="fragment fade-out">fade-out</p>
-						<p class="fragment current-visible">current-visible</p>
-						<p class="fragment highlight-red">highlight-red</p>
-						<p class="fragment highlight-blue">highlight-blue</p>
+						<h2>Typage</h2>
+						<h4>Sophistiqué mais optionnel</h4>
+						<ul>
+							<li>boolean, number, string, Array&lt;T>, Enum, Function, Object, tuples, any, void</li>
+							<li>+ les classes créées</li>
+							<li>Syntaxe postfixée <em>NOM:TYPE</em></li>
+							<li>Tous les types sont effacés à la compilation</li>
+						</ul>
 					</section>
-				</section>
 
-				<section id="transitions">
-					<h2>Transition Styles</h2>
-					<p>
-						You can select from different transitions, like: <br>
-						<a href="?transition=none#/transitions">None</a> -
-						<a href="?transition=fade#/transitions">Fade</a> -
-						<a href="?transition=slide#/transitions">Slide</a> -
-						<a href="?transition=convex#/transitions">Convex</a> -
-						<a href="?transition=concave#/transitions">Concave</a> -
-						<a href="?transition=zoom#/transitions">Zoom</a>
-					</p>
-				</section>
+					<section>
+						<h2>Syntaxe du typage</h2>
+					<pre><code class="javascript" data-trim contenteditable style="font-size: 18px; overflow: visible;">
+var name: string;
+var x:number = 1;
+var tab: string[] = ["hello", "world"];
 
-				<section id="themes">
-					<h2>Themes</h2>
-					<p>
-						reveal.js comes with a few themes built in: <br>
-						<!-- Hacks to swap themes after the page has loaded. Not flexible and only intended for the reveal.js demo deck. -->
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/black.css'); return false;">Black (default)</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/white.css'); return false;">White</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/league.css'); return false;">League</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/sky.css'); return false;">Sky</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/beige.css'); return false;">Beige</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/simple.css'); return false;">Simple</a> <br>
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/serif.css'); return false;">Serif</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/blood.css'); return false;">Blood</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/night.css'); return false;">Night</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/moon.css'); return false;">Moon</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/solarized.css'); return false;">Solarized</a>
-					</p>
-				</section>
-
-				<section>
-					<section data-background="#dddddd">
-						<h2>Slide Backgrounds</h2>
-						<p>
-							Set <code>data-background="#dddddd"</code> on a slide to change the background color. All CSS color formats are supported.
-						</p>
-						<a href="#" class="navigate-down">
-							<img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
-						</a>
+function concat(i: number, o: any) : string {
+	return i.toString() + o;
+}
+function add(i: number, b?: number) : number {
+	return i + (b||0);
+}
+var myTuple: [string,string,number] = ["John", "Doe", 1983];
+					</code></pre>
 					</section>
-					<section data-background="https://s3.amazonaws.com/hakim-static/reveal-js/image-placeholder.png">
-						<h2>Image Backgrounds</h2>
-						<pre><code class="hljs">&lt;section data-background="image.png"&gt;</code></pre>
+
+					<section>
+						<h2>Typage implicite</h2>
+					<pre><code class="javascript" data-trim contenteditable style="font-size: 18px; overflow: visible;">
+var name;
+var x = 1;
+var tab = ["hello", "world"];
+
+name = "Hello"; // ok
+name = 3;       // ok
+
+x = 5;    		// ok
+x = "cinq"; 	// KO
+
+tab = ["un", "deux"];  // ok
+tab = "trois"          // KO
+					</code></pre>
+					<p>Le type peut être déduit à la compilation</p>
 					</section>
-					<section data-background="https://s3.amazonaws.com/hakim-static/reveal-js/image-placeholder.png" data-background-repeat="repeat" data-background-size="100px">
-						<h2>Tiled Backgrounds</h2>
-						<pre><code class="hljs" style="word-wrap: break-word;">&lt;section data-background="image.png" data-background-repeat="repeat" data-background-size="100px"&gt;</code></pre>
+
+
+					<section>
+						<h2>Effacement du type</h2>
+						<ul>
+							<li>Après la compilation, retour au javascript</li>
+							<li>Pas de polymorphisme</li>
+							<li>Recours au typeof / instanceof</li>
+						</ul>
 					</section>
-					<section data-background-video="https://s3.amazonaws.com/static.slid.es/site/homepage/v1/homepage-video-editor.mp4,https://s3.amazonaws.com/static.slid.es/site/homepage/v1/homepage-video-editor.webm" data-background-color="#000000">
-						<div style="background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 20px;">
-							<h2>Video Backgrounds</h2>
-							<pre><code class="hljs" style="word-wrap: break-word;">&lt;section data-background-video="video.mp4,video.webm"&gt;</code></pre>
-						</div>
-					</section>
-					<section data-background="http://i.giphy.com/90F8aUepslB84.gif">
-						<h2>... and GIFs!</h2>
-					</section>
-				</section>
 
-				<section data-transition="slide" data-background="#4d7e65" data-background-transition="zoom">
-					<h2>Background Transitions</h2>
-					<p>
-						Different background transitions are available via the backgroundTransition option. This one's called "zoom".
-					</p>
-					<pre><code class="hljs">Reveal.configure({ backgroundTransition: 'zoom' })</code></pre>
-				</section>
+					<section>
+						<h4>Union de types</h4>
+					<pre><code class="javascript" data-trim contenteditable style="font-size: 18px; overflow: visible;">
+function display(data: string|number) {
+	console.log("data: ", data);
+}
 
-				<section data-transition="slide" data-background="#b5533c" data-background-transition="zoom">
-					<h2>Background Transitions</h2>
-					<p>
-						You can override background transitions per-slide.
-					</p>
-					<pre><code class="hljs" style="word-wrap: break-word;">&lt;section data-background-transition="zoom"&gt;</code></pre>
-				</section>
-
-				<section>
-					<h2>Pretty Code</h2>
-					<pre><code class="hljs" data-trim contenteditable>
-function linkify( selector ) {
-  if( supports3DTransforms ) {
-
-    var nodes = document.querySelectorAll( selector );
-
-    for( var i = 0, len = nodes.length; i &lt; len; i++ ) {
-      var node = nodes[i];
-
-      if( !node.className ) {
-        node.className += ' roll';
-      }
-    }
-  }
+function read(value:number|string): Date|number {
+	if (typeof value == "number") {
+		return value;
+	}
+	return new Date(value);
 }
 					</code></pre>
-					<p>Code syntax highlighting courtesy of <a href="http://softwaremaniacs.org/soft/highlight/en/description/">highlight.js</a>.</p>
-				</section>
-
-				<section>
-					<h2>Marvelous List</h2>
-					<ul>
-						<li>No order here</li>
-						<li>Or here</li>
-						<li>Or here</li>
-						<li>Or here</li>
-					</ul>
-				</section>
-
-				<section>
-					<h2>Fantastic Ordered List</h2>
-					<ol>
-						<li>One is smaller than...</li>
-						<li>Two is smaller than...</li>
-						<li>Three!</li>
-					</ol>
-				</section>
-
-				<section>
-					<h2>Tabular Tables</h2>
-					<table>
-						<thead>
-							<tr>
-								<th>Item</th>
-								<th>Value</th>
-								<th>Quantity</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td>Apples</td>
-								<td>$1</td>
-								<td>7</td>
-							</tr>
-							<tr>
-								<td>Lemonade</td>
-								<td>$2</td>
-								<td>18</td>
-							</tr>
-							<tr>
-								<td>Bread</td>
-								<td>$3</td>
-								<td>2</td>
-							</tr>
-						</tbody>
-					</table>
-				</section>
-
-				<section>
-					<h2>Clever Quotes</h2>
-					<p>
-						These guys come in two forms, inline: <q cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
-						&ldquo;The nice thing about standards is that there are so many to choose from&rdquo;</q> and block:
-					</p>
-					<blockquote cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
-						&ldquo;For years there has been a theory that millions of monkeys typing at random on millions of typewriters would
-						reproduce the entire works of Shakespeare. The Internet has proven this theory to be untrue.&rdquo;
-					</blockquote>
-				</section>
-
-				<section>
-					<h2>Intergalactic Interconnections</h2>
-					<p>
-						You can link between slides internally,
-						<a href="#/2/3">like this</a>.
-					</p>
-				</section>
-
-				<section>
-					<h2>Speaker View</h2>
-					<p>There's a <a href="https://github.com/hakimel/reveal.js#speaker-notes">speaker view</a>. It includes a timer, preview of the upcoming slide as well as your speaker notes.</p>
-					<p>Press the <em>S</em> key to try it out.</p>
-
-					<aside class="notes">
-						Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you open the speaker notes window (hit 's' on your keyboard).
-					</aside>
-				</section>
-
-				<section>
-					<h2>Export to PDF</h2>
-					<p>Presentations can be <a href="https://github.com/hakimel/reveal.js#pdf-export">exported to PDF</a>, here's an example:</p>
-					<iframe src="https://www.slideshare.net/slideshow/embed_code/42840540" width="445" height="355" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:3px solid #666; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
-				</section>
-
-				<section>
-					<h2>Global State</h2>
-					<p>
-						Set <code>data-state="something"</code> on a slide and <code>"something"</code>
-						will be added as a class to the document element when the slide is open. This lets you
-						apply broader style changes, like switching the page background.
-					</p>
-				</section>
-
-				<section data-state="customevent">
-					<h2>State Events</h2>
-					<p>
-						Additionally custom events can be triggered on a per slide basis by binding to the <code>data-state</code> name.
-					</p>
-					<pre><code class="javascript" data-trim contenteditable style="font-size: 18px;">
-Reveal.addEventListener( 'customevent', function() {
-	console.log( '"customevent" has fired' );
-} );
+					<h4>Transtypage</h4>
+					<pre><code class="javascript" data-trim contenteditable style="font-size: 18px; overflow: visible;">
+var value: string|number = 45;
+var test = &lt;string>value;
 					</code></pre>
+					</section>
+
+					<section>
+						<h2>any</h2>
+					<pre><code class="javascript" data-trim contenteditable style="font-size: 18px; overflow: visible;">
+// Fonctionne comme un joker
+var foo: any = 45;
+
+function bar(a: any, b) { // b est any, car pas de déduction de type ici
+	var test1: string = a;  // ok
+	var test2: string = b;  // ok
+
+	b = "foo"; // b reste any
+	var test3: number = b;  // ok
+
+	a = b; // ok
+}
+					</code></pre>
+					</section>
+
+					<section>
+						<h2>Type Guards</h2>
+					<pre><code class="javascript" data-trim contenteditable style="font-size: 18px; overflow: visible;">
+function foo(x: number | string) {
+	if (typeof x === "string") {
+		return x.length;  // x has type string here
+	}
+	else {
+		return x + 1;     // x has type number here
+	}
+}
+					</code></pre>
+					</section>
+
 				</section>
 
 				<section>
-					<h2>Take a Moment</h2>
-					<p>
-						Press B or . on your keyboard to pause the presentation. This is helpful when you're on stage and want to take distracting slides off the screen.
-					</p>
+					<section>
+						<h2>Classes et interfaces</h2>
+						<ul>
+							<li>Syntaxe ES6</li>
+							<li>Les membres sont publics par défaut</li>
+							<li>Les modifieurs classiques: public/private/protected et static</li>
+						</ul>
+						<p><em>Apporte à javsascript une approche de conception objet <i>familière</i></em></p>
+					</section>
+
 				</section>
 
 				<section>
-					<h2>Much more</h2>
+					<section>
+						<h2>Classes</h2>
+						<h3>Du sucre syntaxique sur le système objet à prototype</h3>
+						<pre><code class="javascript" data-trim contenteditable style="font-size: 18px; overflow: visible;" external-src="samples/class_example.ts">
+						</code></pre>
+					</section>
+
+					<section>
+						<h3>Héritage</h3>
+						<pre><code class="javascript" data-trim contenteditable style="font-size: 18px; overflow: visible;" external-src="samples/class_example_heritage.ts">
+						</code></pre>
+					</section>
+
+					<section>
+						<h3>Modifieurs d'accès</h3>
+						<p>
+							Les classiques: public/private/protected et static
+						</p>
+						<pre><code class="javascript" data-trim contenteditable style="font-size: 18px; overflow: visible;">
+class Player {
+	score:number = 0;
+
+	constructor(public name:string) {
+	}
+
+	addScore(points:number) : void {
+		this.score += points;
+	}
+
+	private reset() {
+		this.score = 0;
+	}
+
+	static create(name:string, score:number): Player {
+		var player = new Player(name);
+		player.addScore(score);
+		return player;
+	}
+}
+						</code></pre>
+					</section>
+
+				</section>
+
+				<section>
+					<section>
+						<h2>Les interfaces</h2>
+						<ul>
+							<li>Même sémantique que dans les autres langages: <em>un type abstrait qui ne contient ni données ni implémentation</em>.</li>
+							<li>Particularité: Elles <u>disparaissent à la compilation</u></li>
+						</ul>
+					</section>
+
+					<section>
+						<h2>Vérifiés à la compilation</h2>
+						<pre><code class="javascript" data-trim contenteditable style="font-size: 18px; overflow: visible;" external-src="samples/interface_example.ts">
+						</code></pre>
+					</section>
+
+					<section>
+						<h2>Extensions d'interface</h2>
+						<pre><code class="javascript" data-trim contenteditable style="font-size: 18px; overflow: visible;" external-src="samples/interface_example_2.ts">
+						</code></pre>
+					</section>
+
+					<section>
+						<h2>Implémentation d'interface</h2>
+						<pre><code class="javascript" data-trim contenteditable style="font-size: 18px; overflow: visible;" external-src="samples/interface_example_3.ts">
+						</code></pre>
+						<p> ** Tout est classique **</p>
+					</section>
+
+				</section>
+
+				<section>
+					<section>
+						<h2>les fonctions <br><span style="text-decoration: line-through">"grosses flèches épaisses"</span><br>Fat Arrows</h2>
+						<p>Parfois appelées pédantesquement <em>expressions lambdas</em> </p>
+						<pre><code class="javascript" data-trim contenteditable style="font-size: 18px; overflow: visible;">
+function divideBy2(data) {
+	return data.map(function(el) {
+		return el/2;
+	});
+}
+						</code></pre>
+						<p>Avec la notation ES6</p>
+						<pre><code class="javascript" data-trim contenteditable style="font-size: 18px; overflow: visible;">
+function divideBy2(data: number[]) {
+	return data.map( (el) => el/2 );
+}
+						</code></pre>
+					</section>
+
+					<section>
+						<h3>Corrige les problèmes de function()</h3>
+						<pre><code class="javascript" data-trim contenteditable style="font-size: 18px; overflow: visible;">
+function divideBy2(data: number[]) {
+	return data.map( (el) => el/2 );
+}
+
+function divideBy2(data: number[]) {
+	return data.map( (el) => {
+		return el/2;
+	});
+}
+						</code></pre>
+						<p>Notation moins verbeuse</p>
+						<p><em>this</em> n'est pas modifié</p>
+						<p style="border: 4px solid #aaa; background: #555">
+							Correspond mieux au fonctionnement attendu
+							<br> Moins d'erreurs sur le <i>this</i>
+							<br> À préférer pour les débutants
+						</p>
+					</section>
+
+					<section>
+						<h2>Typage des fonctions</h2>
+						<pre><code class="javascript" data-trim contenteditable style="font-size: 18px; overflow: visible;" external-src="samples/lambda_example.ts">
+
+						</code></pre>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h2>Génériques</h2>
+						<pre><code class="javascript" data-trim contenteditable style="font-size: 18px; overflow: visible;" external-src="samples/generic_example.ts">
+						</code></pre>
+						<p>Permet de rajouter des contraintes supplémentaires sur le typage</p>
+					</section>
+					<section>
+						<h2>Génériques</h2>
+						<pre><code class="javascript" data-trim contenteditable style="font-size: 18px; overflow: visible;" external-src="samples/generic_example_2.ts">
+						</code></pre>
+						<p>Marche aussi sur les classes</p>
+					</section>
+				</section>
+
+
+				<section>
+					<h2>Fonctionnalités ES6</h2>
 					<ul>
-						<li>Right-to-left support</li>
-						<li><a href="https://github.com/hakimel/reveal.js#api">Extensive JavaScript API</a></li>
-						<li><a href="https://github.com/hakimel/reveal.js#auto-sliding">Auto-progression</a></li>
-						<li><a href="https://github.com/hakimel/reveal.js#parallax-background">Parallax backgrounds</a></li>
-						<li><a href="https://github.com/hakimel/reveal.js#keyboard-bindings">Custom keyboard bindings</a></li>
+						<li>let & const</li>
+						<li>Template strings `Hello ${name}`</li>
+						<li>Modules ES6, commonjs, amd</li>
+						<li>Decorators (annotations)</li>
+						<li>Générateurs</li>
+						<li>Déstructuration</li>
 					</ul>
 				</section>
 
-				<section style="text-align: left;">
-					<h1>THE END</h1>
-					<p>
-						- <a href="http://slides.com">Try the online editor</a> <br>
-						- <a href="https://github.com/hakimel/reveal.js">Source code &amp; documentation</a>
-					</p>
+				<section>
+					<h2>Fonctionnalités non ES6</h2>
+					<ul>
+						<li>Support JSX</li>
+						<li>Alias de types</li>
+						<li>Classes et méthodes abstraites</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Roadmap</h2>
+					<ul>
+						<li>2.0: async/await support for ES5/ES3
+						</li>
+						<li>1.8: détection de code impossible à atteindre, meilleures gestions des modules
+						</li>
+						<li>1.7: async/await pour ES6, <i>this</i> polymorphique, meilleures gestions des modules
+						</li>
+					</ul>
 				</section>
 
 			</div>
@@ -383,29 +446,45 @@ Reveal.addEventListener( 'customevent', function() {
 		<script src="js/reveal.js"></script>
 
 		<script>
+			$(function(){
+				$("code").each(function(i,code) {
+					var filename = $(code).attr("external-src");
+					console.log("filemame", filename);
+					if (filename) {
+						$(code).load(filename);
+					}
+				});
+			});
+		</script>
+
+		<script>
 
 			// Full list of configuration options available at:
 			// https://github.com/hakimel/reveal.js#configuration
-			Reveal.initialize({
-				controls: true,
-				progress: true,
-				history: true,
-				center: true,
+			setTimeout(function(){
+				Reveal.initialize({
+					controls: true,
+					progress: true,
+					history: true,
+					center: false,
 
-				transition: 'slide', // none/fade/slide/convex/concave/zoom
+					transition: 'slide', // none/fade/slide/convex/concave/zoom
 
-				// Optional reveal.js plugins
-				dependencies: [
-					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
-					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
-					{ src: 'plugin/zoom-js/zoom.js', async: true },
-					{ src: 'plugin/notes/notes.js', async: true }
-				]
+					// Optional reveal.js plugins
+					dependencies: [
+						{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+						{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+						{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+						{ src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+						{ src: 'plugin/zoom-js/zoom.js', async: true },
+						{ src: 'plugin/notes/notes.js', async: true }
+					]
+				});
 			});
 
 		</script>
+
+
 
 	</body>
 </html>
